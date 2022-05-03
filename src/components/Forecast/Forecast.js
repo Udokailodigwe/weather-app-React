@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Conditions from '../Conditions/conditions';
 
 const Forecast = () => {
-    let [responseObj, setResponseObj] = useState({}); //destructing and using useState
+    let [responseObj, setResponseObj] = useState({}); //destructing and using hook
     function getForecast() {
         const options = {
             method: 'GET',
@@ -23,10 +23,11 @@ const Forecast = () => {
     return (
         <div>
             <h2>Find Current Weather Condition</h2>
-            <div>
-                {JSON.stringify(responseObj)}
-            </div>
             <button onClick={getForecast}>Get Forecast</button>
+            {/**imported and used condition component to wrap and display response, passed as props also */}
+            <Conditions
+                responseObj={responseObj}
+            />
         </div>
     )
 }
