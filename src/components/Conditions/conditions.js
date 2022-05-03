@@ -1,8 +1,11 @@
 import React from 'react';
 
+//Import css module stylesheet as classes
+import classes from './conditions.module.css';
+
 const Conditions = (props) => {
     return (
-        <div>
+        <div className={classes.wrapper}>
             {/**add a tenary operator to display data if response key, cod eqauls 200 */}
             {props.responseObj.cod === 200 ?
                 <div>
