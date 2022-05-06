@@ -19,6 +19,7 @@ Data will load from an external weather API, presenting the weather condition of
 <li>HTML</li>
 
 ## APP Hosted on
+https://udokailodigwe.github.io/weather-app-React/
 
 ## External API used
 https://rapidapi.com/community/api/open-weather-map/
