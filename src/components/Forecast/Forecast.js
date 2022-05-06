@@ -58,7 +58,7 @@ const Forecast = () => {
             .catch(err => {
                 setError(true);
                 setLoading(false);
-                console.log(err.message);
+                console.log(err, "no response");
             });
     }
 
