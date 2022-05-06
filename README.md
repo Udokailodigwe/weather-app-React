@@ -6,10 +6,10 @@ A simple weather checking application for users to get the current weather situa
 
 <li>User can enter any city of their choice</li>
 <li>User can select any weather metrics of their choice</li>
-<li>User can view the result of their selected on the app page on clicking get forecast button</li>
+<li>User can view the result of any entered city on the app page, after clicking get forecast button</li>
 
 ## Main Feature
-Data will load from an external weather API, presenting the weather condition of the selected city, on user demand.
+Data will load from an external weather API, presenting the weather condition of the selected city, on user's demand.
 
 ## Technologies Applied
 <li>JavaScript</li>
