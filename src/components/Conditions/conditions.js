@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 //Import css module stylesheet as classes
 import classes from './conditions.module.css';
@@ -24,5 +26,13 @@ const Conditions = (props) => {
         </div>
     )
 }
+
+//used proptypes to validate props data types
+Conditions.propTypes = {
+    responseObj: PropTypes.shape({
+        unit: PropTypes.string,
+        city: PropTypes.string,
+    }).isRequired,
+};
 
 export default Conditions;
